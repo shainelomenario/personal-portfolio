@@ -1294,4 +1294,11 @@ input[type="text"] {
   size: 250%;
 }
 
+.project-divider {
+  border-bottom: 1px solid #ccc; /* Change color as needed */
+  margin-bottom: 30px; /* Space below the border */
+  padding-bottom: 30px; /* Space above the border */
+}
+
+
 /*# sourceMappingURL=style.css.map */
