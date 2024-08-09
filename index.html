@@ -69,7 +69,7 @@
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/akif\ linkedin.png);"></div>
 							<h1><span>Akif Rahman</span></h1>
-							<h3><span>Marketing Student | Secretary @ AMA </span></h3>
+							<h3><span>Marketing Student | Secretary </span></h3>
 							<p>
 								<ul class="fh5co-social-icons">
 									<li><a href="#"><i class="icon-google2"></i></a></li>
@@ -597,6 +597,138 @@
 			</div>
 		</div>
 	</div>
+
+<!-- Projects Section with Card Style -->
+<div id="fh5co-projects" class="animate-box" style="padding: 50px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've worked on. Hover over the cards to learn more.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="images/portfolio-1.jpg" alt="Project One" class="img-responsive">
+                    <div class="card-info">
+                        <h3>Annie Lea</h3>
+                        <p class="role">Apps Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card main-card">
+                    <img src="images/portfolio-2.jpg" alt="Eliana Maia" class="img-responsive">
+                    <div class="card-info">
+                        <h3>Eliana Maia</h3>
+                        <p class="role">Website Developer</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem ea voluptatum consequuntur cumque ex commodi blanditiis.</p>
+                        <a href="index2.html" target = "_blank" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="images/portfolio-3.jpg" alt="Harley Briana" class="img-responsive">
+                    <div class="card-info">
+                        <h3>Harley Briana</h3>
+                        <p class="role">Graphic Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.project-card .card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.project-card p.role {
+    font-weight: bold;
+    color: rgba(0, 166, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.main-card {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-card img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.main-card .card-info {
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+}
+
+.main-card h3 {
+    font-size: 2em;
+}
+
+.main-card p.role {
+    font-size: 1.2em;
+}
+
+.main-card p {
+    font-size: 1em;
+}
+
+.main-card .btn {
+    background-color: rgba(0, 166, 255, 0.9);
+    color: white;
+}
+
+.main-card .btn:hover {
+    background-color: rgba(0, 140, 255, 0.9);
+}
+</style>
+
+
 	
 	<!-- <div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
@@ -617,27 +749,24 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="#">
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="99d008c6-fd10-4f87-ad4d-5686b1db7034">
+
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+						<input type="text" id="fname" class="form-control" name = "name" placeholder="First and last name">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
+						<input type="text" id="email" class="form-control" name = "email" placeholder="Your email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+						<input type="text" id="subject" class="form-control" name = "subject" placeholder="Your subject of this message">
 					</div>
 				</div>
 
